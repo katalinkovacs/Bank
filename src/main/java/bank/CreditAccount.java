@@ -24,5 +24,10 @@ public class CreditAccount extends Account{
         this.creditLimit = creditLimit;
     }
 
+    public String printHello(){
+
+        return "hello from CreditAccount";
+    }
+
 
 }

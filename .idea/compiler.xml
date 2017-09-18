@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bank" />
+        <module name="bankandchildcare" />
         <module name="udemyjava" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bank" target="1.5" />
+      <module name="bankandchildcare" target="1.5" />
       <module name="udemyjava" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -1,12 +1,13 @@
 package bank;
 
-
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class StartApp {
 
     public static void main(String[] args) {
+
+        System.out.println("Main started................");
 
         Customer c1 = new Customer(1, "Katalin", "Kovacs");
         Customer c2 = new Customer(2, "Zoltan", "Kovacs");
@@ -33,10 +34,63 @@ public class StartApp {
         Account credit6 = new CreditAccount(6300, 90000);
         Account credit7 = new CreditAccount(7700, 25000);
 
-
+        //Create an ACCOUNT arraylist called account
         ArrayList<Account> account = new ArrayList<Account>();
+        //Adding accounts to the arraylist
+        account.add(s1);
+        account.add(s2);
+        account.add(s3);
+        account.add(s4);
+        account.add(s5);
+        account.add(credit6);
+        account.add(credit7);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("account ArrayList Elements are: " + account);
+
+        for(Account counter: c1.getMyAccounts()){
+            System.out.println("in for loop." + counter);
+        }
+
+        System.out.println("--------------------------------------------");
+
+        //System.out.println(c1.getMyAccounts());
+        c1.printSomething();
+        System.out.println(s1.printHello());
+        System.out.println(credit1.printHello());
+
+        System.out.println("--------------------------------------------");
+
+
+        //c1.getMyAccounts().add()
 
         c1.addAccount(s1);
+        c1.addAccount(s2);
+        c1.addAccount(s3);
+        c1.addAccount(s4);
+        c2.addAccount(s5);
+        c2.addAccount(credit1);
+        c2.addAccount(credit2);
+
+        for(Account counter: c1.getMyAccounts()){
+            System.out.println("in for loop." + counter);
+        }
+
+
+      System.out.println(c1.getMyAccounts());
+
+        System.out.println("--------------------------------------------");
+
+        c1.addCreditAccount((CreditAccount) credit1);
+        c1.addCreditAccount((CreditAccount) credit2);
+
+        c4.addSavingsAccount((SavingsAccount) s4);
+        c5.addSavingsAccount((SavingsAccount) s7);
+
+
+        System.out.println(c1.getCreditAccounts());
+
+
 
 
 

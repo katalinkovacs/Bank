@@ -20,4 +20,8 @@ public class SavingsAccount extends Account {
     }
 
 
+    public String printHello(){
+
+        return "hello from SavingsAccount";
+    }
 }
