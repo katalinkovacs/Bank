@@ -1,6 +1,5 @@
 package model;
 
-
 import childcare.Child;
 
 import java.sql.*;
@@ -9,6 +8,7 @@ import java.util.List;
 
 public class DaoChild {
 
+    // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost/katidb";
 
@@ -22,7 +22,7 @@ public class DaoChild {
 
 
     // this method gets invoked from every CRUD operation
-    private static Connection getDBConnection() {
+    public static Connection getDBConnection() {
 
         Connection dbConnection = null;
 
@@ -54,7 +54,10 @@ public class DaoChild {
 
 
     // first CRUD operation
-    public void insertRecord(int idOfChild, String nameOfChild, int ageOfChild) {
+        //public void insertRecord(int idOfChild, String nameOfChild, int ageOfChild) {
+
+        public void insertRecord(Child c) {
+
 
         System.out.println("--------INSERTRECORD Method STARTED----------");
 
@@ -64,13 +67,15 @@ public class DaoChild {
         try {
 
             //STEP 4: Execute a query
-            System.out.println("Inserting records into the table...");
+            System.out.println("Inserting record into the table...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO Child (id, Name, Age)" +
-                    "VALUES (11, 'Andrew', 5), (12, 'Ged', 19), (13, 'Samantha', 39)";
+            //String sql = "INSERT INTO Child (id, Name, Age)" +
+               //     "VALUES (int idOfChild, String nameOfChild, int ageOfChild)";
 
+            String sql = "INSERT INTO Child (id, Name, Age) VALUES (" + c.getId() + ", \"" + c.getName() + "\"," + c.getAge() + ")";
 
+            System.out.println(sql);
             stmt.executeUpdate(sql);
 
             System.out.println("Inserted records with METHOD into the table...");
