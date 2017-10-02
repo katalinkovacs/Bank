@@ -1,15 +1,10 @@
 package model;
 
-import childcare.Child;
-
 import java.sql.*;
-import java.util.ArrayList;
 
 
 public class Dao {
 
-
-    // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost/katidb";
 
@@ -18,90 +13,112 @@ public class Dao {
     static final String PASS = "admin";
 
 
-    //CHECK DATABASE CONNECTION METHOD   -->     this method gets invoked from every CRUD operation
-    public static Connection getDataBaseConnection() {
-
-        Connection dbConnection = null;
-
-        try {
-
-            Class.forName(JDBC_DRIVER);
-
-        } catch (ClassNotFoundException e) {
-
-            System.out.println(e.getMessage());
-            System.out.println("ClassNotFoundException-----------What e message??????????????");
-
-        }
-
-        try {
-
-            dbConnection = DriverManager.getConnection(
-                    DB_URL, USER, PASS);
-
-
-        } catch (SQLException e) {
-
-            System.out.println(e.getMessage());
-            System.out.println("SQLException------------Wrong DBname OR user/pw credentials");
-
-        }
-        System.out.println("------------------Connected to DB??????????????????-----------------------");
-        return dbConnection;
+    // CONSTRUCTOR
+    public Dao() {
 
     }
 
-/*
-    public void insertData() {
 
-        System.out.println("--------insertData Method STARTED----------");
+    // METHOD - CHECK DB CONNECTION
+    public Connection checkDbConnection() {
+
+        Connection connection = null;
+        //Statement stmt = null;
+
+        try {
+
+            //   Register JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //   Open a connection
+            System.out.println("Connecting to katidb database...");
+            connection = DriverManager.getConnection(DB_URL, USER, PASS);
+
+        } catch (ClassNotFoundException e) {
+            System.out.println("ClassNotFoundException e --> Something wih JDBC DRIVER --------- OR ????????? -----------------------");
+            e.printStackTrace();
+        } catch (SQLException e) {
+            System.out.println("SQLException e --> wrong username or password or db name-----------------------------");
+            e.printStackTrace();
+        }
+
+        return connection;
+    }
+
+    // METHOD - INSERT DATA
+    public void insertData() {
 
         Connection conn = null;
         Statement stmt = null;
+        try {
 
-            //STEP 2: Register JDBC driver
-            Class.forName("com.mysql.jdbc.Driver");
-
-            //STEP 3: Open a connection
-            System.out.println("Connecting to katidb database...");
-            conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
-            //STEP 4: Execute a query
-            System.out.println("Creating a SELECT statement...");
+            //Execute a query
+            System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
-            String sql;
-            sql = "SELECT * FROM Child";
-            System.out.println("SELECT * FROM Child");
-            ResultSet rs = stmt.executeQuery(sql);  // RECORD LIST to rs
 
+            //String sql = "INSERT INTO Child (id, Name, Age)" +
+            //       "VALUES (1, 'Oliver', 11), (2, 'Kornel', 9), (3, 'Bulcsu', 39)";
+            String sql = "INSERT INTO Child (id, Name, Age)" +"VALUES (1, 'Oliver', 11)";
 
-            ArrayList<Child> childrenList = new ArrayList<Child>();
-            //List childrenList  = new ArrayList<String>();
+            stmt.executeUpdate(sql);
 
+            System.out.println("Inserted records into the table...");
 
-            //STEP 5: Extract data from result set
-            while (rs.next()) {
+        } catch (SQLException se) {
+            //Handle errors for JDBC
+            System.out.println("SQLException se --> Handle errors for JDBC");
+            se.printStackTrace();
+        } catch (Exception e) {
+            //Handle errors for Class.forName
+            System.out.println("Exception e --> Handle errors for Class.forName");
+            e.printStackTrace();
 
-                //Retrieve by column name
-                int id = rs.getInt("Id");
-                String name = rs.getString("Name");
-                int age = rs.getInt("Age");
-
-                Child currentChildRecord = new Child(id, name, age);
-                System.out.println("currentChild created--------------------");
-                System.out.println("Name is: " + currentChildRecord.getName());
-
-                childrenList.add(currentChildRecord);
-
-                //Display values
-                System.out.println("ID: " + id + ", Name: " + name + ", Age: " + age);
-
-            }
-
-            System.out.println(childrenList.size());
-
+        }
 
     }
 
-*/
+
+    public  void selectEverythingFromDb(){
+
+        System.out.println("-----------METHOD selectEverythingFromDb STARTS-----------");
+
+        Connection conn = checkDbConnection();
+        Statement stmt = null;
+
+        try{
+
+            System.out.println("-----------TRY STARTS-----------");
+
+            String sql = "SELECT * FROM Child";
+            ResultSet rs = stmt.executeQuery(sql);
+
+            while(rs.next()){
+                //Retrieve by column name
+                int id  = rs.getInt("id");
+                String name = rs.getString("name");
+                int age = rs.getInt("age");
+
+                //Display values
+                System.out.print("ID: " + id);
+                System.out.print(", Name: " + name);
+                System.out.println(", Age: " + age);
+            }
+            rs.close();
+        }
+        catch(SQLException se){
+            //Handle errors for JDBC
+            System.out.println("SQLException se --> Handle errors for JDBC ");
+            se.printStackTrace();
+        }
+        catch(Exception e){
+            //Handle errors for Class.forName
+            System.out.println("Exception e --> Handle errors for Class.forName");
+            e.printStackTrace();
+
+        }
+    }
+
+
+
+
 }

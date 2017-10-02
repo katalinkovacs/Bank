@@ -23,7 +23,9 @@ public class StartApp02 {
         //dao.getAllKidsd();
 
         Dao dao = new Dao();
-        dao.getDataBaseConnection();
+        dao.checkDbConnection();
+        //dao.insertData();
+        dao.selectEverythingFromDb();
 
 
     }

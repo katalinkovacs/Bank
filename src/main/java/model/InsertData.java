@@ -36,7 +36,7 @@ public class InsertData {
             stmt = conn.createStatement();
 
             String sql = "INSERT INTO Child (id, Name, Age)" +
-                           "VALUES (11, 'Andrew', 5), (12, 'Ged', 19), (13, 'Samantha', 39)";
+                           "VALUES (21, 'Bela', 5), (22, 'Benedek', 19), (23, 'Bandras', 39)";
 
 
             stmt.executeUpdate(sql);

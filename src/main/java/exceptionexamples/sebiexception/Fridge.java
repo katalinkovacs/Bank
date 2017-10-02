@@ -7,27 +7,25 @@ import java.util.Random;
 public class Fridge {
 
     private Random randomGenerator;
-    private ArrayList<Food> fridge;
-
-
+    private ArrayList<Food> foodList;
 
     public Fridge ()
     {
         randomGenerator = new Random();
-        fridge = new ArrayList<Food>();
+        foodList = new ArrayList<Food>();
         Sausage sausage = new Sausage();
         HerbalStuff herbal = new HerbalStuff();
         BreadButter breadButter = new BreadButter();
-        fridge.add(sausage);
-        fridge.add(breadButter);
-        fridge.add(herbal);
+        foodList.add(sausage);
+        foodList.add(breadButter);
+        foodList.add(herbal);
     }
 
     public void availableFood()
     {
         Sebi sebi = new Sebi();
-        int index = randomGenerator.nextInt(fridge.size());
-        Food food = fridge.get(index);
+        int index = randomGenerator.nextInt(foodList.size());
+        Food food = foodList.get(index);
         try{
             sebi.feedMe(food);
         }catch (SebiGrumpyException e){
@@ -37,15 +35,6 @@ public class Fridge {
         System.out.println("FYI: The available food was: " + food.getType());
 
     }
-
-    /*    public Food anyFood()
-    {
-        int index = randomGenerator.nextInt(fridge.size());
-        Food food = fridge.get(index);
-        System.out.println("The available food was: " + food.getType());
-        return food;
-    }
-*/
 
 
 }
