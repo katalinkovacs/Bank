@@ -1,14 +1,10 @@
 package model;
 
-import childcare.Child;
-
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class DaoChild {
 
-    // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost/katidb";
 
@@ -17,152 +13,146 @@ public class DaoChild {
     static final String PASS = "admin";
 
 
+    // CONSTRUCTOR
     public DaoChild() {
+
     }
 
 
-    // this method gets invoked from every CRUD operation
-    public static Connection getDBConnection() {
+    // METHOD - CHECK DB CONNECTION
+    public Connection checkDbConnection() {
 
-        Connection dbConnection = null;
+        Connection connection = null;
+        //Statement stmt = null;
 
         try {
 
-            Class.forName(JDBC_DRIVER);
+            //   Register JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //   Open a connection
+            System.out.println("Connecting to katidb database...");
+            connection = DriverManager.getConnection(DB_URL, USER, PASS);
 
         } catch (ClassNotFoundException e) {
-
-            System.out.println(e.getMessage());
-
-        }
-
-        try {
-
-            dbConnection = DriverManager.getConnection(
-                    DB_URL, USER, PASS);
-
-
+            System.out.println("ClassNotFoundException e --> Something wih JDBC DRIVER --------- OR ????????? -----------------------");
+            e.printStackTrace();
         } catch (SQLException e) {
-
-            System.out.println(e.getMessage());
-
+            System.out.println("SQLException e --> wrong username or password or db name-----------------------------");
+            e.printStackTrace();
         }
 
-        return dbConnection;
-
+        return connection;
     }
 
+    // METHOD - INSERT DATA
+    public void insertData() {
 
-    // first CRUD operation
-        //public void insertRecord(int idOfChild, String nameOfChild, int ageOfChild) {
-
-        public void insertRecord(Child c) {
-
-
-        System.out.println("--------INSERTRECORD Method STARTED----------");
-
-        // here you getting the connection from the method above
-        Connection conn = getDBConnection();
+        Connection conn = checkDbConnection();
         Statement stmt = null;
         try {
 
-            //STEP 4: Execute a query
-            System.out.println("Inserting record into the table...");
+            //Execute a query
+            System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
             //String sql = "INSERT INTO Child (id, Name, Age)" +
-               //     "VALUES (int idOfChild, String nameOfChild, int ageOfChild)";
+            //       "VALUES (1, 'Oliver', 11), (2, 'Kornel', 9), (3, 'Bulcsu', 39)";
+            String sql = "INSERT INTO Child (id, Name, Age)" +"VALUES (1, 'Oliver', 11)";
 
-            String sql = "INSERT INTO Child (id, Name, Age) VALUES (" + c.getId() + ", \"" + c.getName() + "\"," + c.getAge() + ")";
-
-            System.out.println(sql);
             stmt.executeUpdate(sql);
 
-            System.out.println("Inserted records with METHOD into the table...");
+            System.out.println("Inserted records into the table...");
 
         } catch (SQLException se) {
             //Handle errors for JDBC
+            System.out.println("SQLException se --> Handle errors for JDBC");
             se.printStackTrace();
         } catch (Exception e) {
             //Handle errors for Class.forName
+            System.out.println("Exception e --> Handle errors for Class.forName");
             e.printStackTrace();
-        } finally {
-            //finally block used to close resources
-            try {
-                if (stmt != null)
-                    conn.close();
-            } catch (SQLException se) {
-            }// do nothing
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
-        }//end try
+
+        }
 
     }
 
+    public void insertData2(int id, String name, int age) {
 
-    //Another CRUD operation/method for example to get all kids
-    public List<Child> getAllKidsd() {
 
-        System.out.println("--------getAllKids Method STARTED----------");
 
-        // here you getting the connection from the method above
-        Connection conn = getDBConnection();
+        Connection conn = checkDbConnection();
         Statement stmt = null;
-
-        ArrayList<Child> childrenList = new ArrayList<Child>();
         try {
 
-            //STEP 4: Execute a query
-            System.out.println("select * from child...");
+            //Execute a query
+            System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
 
-            String sql = "SELECT * FROM Child";
-            System.out.println("SELECT * FROM Child");
-            ResultSet rs = stmt.executeQuery(sql);  // RECORD LIST to rs
+            //String sql = "INSERT INTO Child (id, Name, Age) VALUES (" + c.getId() + ", \"" + c.getName() + "\"," + c.getAge() + ")";
+            String sql = "INSERT INTO Child (id, Name, Age) VALUES (" + id + ", \"" + name + "\"," + age + ")";
 
+            stmt.executeUpdate(sql);
 
+            System.out.println("Inserted records into the table...");
 
-            // Extract data from result set
-            while (rs.next()) {
-                //Retrieve by column name
-                int id = rs.getInt("Id");
-                String name = rs.getString("Name");
-                int age = rs.getInt("Age");
-
-                Child currentChildRecord = new Child(id, name, age);
-                System.out.println("currentChild created--------------------");
-                System.out.println("Name is: " + currentChildRecord.getName());
-                childrenList.add(currentChildRecord);
-                //Display values
-                System.out.println("ID: " + id + ", Name: " + name + ", Age: " + age);
-            }
         } catch (SQLException se) {
             //Handle errors for JDBC
+            System.out.println("SQLException se --> Handle errors for JDBC");
             se.printStackTrace();
         } catch (Exception e) {
             //Handle errors for Class.forName
+            System.out.println("Exception e --> Handle errors for Class.forName");
             e.printStackTrace();
-        } finally {
-            //finally block used to close resources
-            try {
-                if (stmt != null)
-                    conn.close();
-            } catch (SQLException se) {
-            }// do nothing
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
-        }//end try
 
-        // method returns all children
-        return childrenList;
+        }
 
     }
+
+
+    public  void selectEverythingFromChild(){
+
+        System.out.println("-----------METHOD selectEverythingFromDb STARTS-----------");
+
+        Connection conn = checkDbConnection();
+        Statement stmt = null;
+
+        try{
+
+            System.out.println("-----------TRY STARTS-----------");
+            stmt = conn.createStatement();
+            String sql = "SELECT * FROM Child";
+            System.out.println(sql);
+            ResultSet rs = stmt.executeQuery(sql);
+            System.out.println(rs);
+
+            while(rs.next()){
+                //Retrieve by column name
+                int id  = rs.getInt("id");
+                String name = rs.getString("name");
+                int age = rs.getInt("age");
+
+                //Display values
+                System.out.print("ID: " + id);
+                System.out.print(", Name: " + name);
+                System.out.println(", Age: " + age);
+            }
+            rs.close();
+        }
+        catch(SQLException se){
+            //Handle errors for JDBC
+            System.out.println("SQLException se --> Handle errors for JDBC ");
+            se.printStackTrace();
+        }
+        catch(Exception e){
+            //Handle errors for Class.forName
+            System.out.println("Exception e --> Handle errors for Class.forName");
+            e.printStackTrace();
+
+        }
+    }
+
+
+
+
 }

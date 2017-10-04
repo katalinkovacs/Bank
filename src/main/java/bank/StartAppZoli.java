@@ -1,7 +1,7 @@
 package bank;
 
 import childcare.Child;
-import model.DaoChild;
+import model.DaoChildZoli;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class StartAppZoli {
     public static void main(String ... args){
 
         // here you create a new dao object
-        DaoChild dao = new DaoChild();
+        DaoChildZoli dao = new DaoChildZoli();
 
         // and invoke the CRUD methods on it
         List<Child> myChildren = dao.getAllKidsd();

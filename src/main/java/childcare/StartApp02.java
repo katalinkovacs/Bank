@@ -1,7 +1,6 @@
 package childcare;
 
 
-import model.Dao;
 import model.DaoChild;
 
 public class StartApp02 {
@@ -10,7 +9,7 @@ public class StartApp02 {
 
         //ChildCare childcare1 = new ChildCare("One Tree", "Altona Meadows");
 
-        //DaoChild dao = new DaoChild();
+        //DaoChildZoli dao = new DaoChildZoli();
 
        //Child c1 = new Child(15, "Sebike", 3);
 
@@ -22,10 +21,12 @@ public class StartApp02 {
        //System.out.println("--------LIST: ");
         //dao.getAllKidsd();
 
-        Dao dao = new Dao();
+        DaoChild dao = new DaoChild();
         dao.checkDbConnection();
         //dao.insertData();
-        dao.selectEverythingFromDb();
+        //dao.selectEverythingFromChild();
+        //dao.insertData2(2, "Katus", 33);
+        dao.selectEverythingFromChild();
 
 
     }
