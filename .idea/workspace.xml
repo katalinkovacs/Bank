@@ -2,85 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22767a8b-ecbe-413f-b143-617e0f7b1e1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__avalon_framework_avalon_framework_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__logkit_logkit_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_2_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_2_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_2_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_2_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_dao_2_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_2_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/childcare/StartApp03.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/ChildDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/ChildJDBCTemplate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/ChildMapper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bank-java-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bank/Account.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bank/CreditAccount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bank/Customer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bank/SavingsAccount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bank/StartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bank/StartAppZoli.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/childcare/Child.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/childcare/ChildCare.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/childcare/StartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/childcare/StartApp02.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/arraydivideexample/Class1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/arraydivideexample/Class2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/arraydivideexample/StartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/Exception01.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/Exception02.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/Exception03.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/Exception04.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/Exception05.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/Exception06.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/ExceptionMethods.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/ExceptionMethodsStartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/InvalidProductException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/MyException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/MyExceptionStartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/NestedTryCatch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/practice/NestedTryCatch_2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/Andi.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/BreadButter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/Food.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/Kati.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/Sausage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/Sebi.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/SebiGrumpyException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/StartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiclassreference/Zoli.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Andi.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/BreadButter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Food.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Fridge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/HerbalStuff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Kati.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Sausage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Sebi.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/SebiGrumpyException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/StartApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/exceptionexamples/sebiexception/Zoli.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/model/ConnectUrl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/model/Dao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/model/DaoChild.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/model/InsertData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/ConnectUrl.java" afterPath="$PROJECT_DIR$/src/main/java/model/jdbcexample/ConnectUrl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/Dao.java" afterPath="$PROJECT_DIR$/src/main/java/model/DaoChild.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/DaoChild.java" afterPath="$PROJECT_DIR$/src/main/java/model/DaoChildZoli.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/InsertData.java" afterPath="$PROJECT_DIR$/src/main/java/model/jdbcexample/InsertData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Bean.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bank/StartAppZoli.java" afterPath="$PROJECT_DIR$/src/main/java/bank/StartAppZoli.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/childcare/StartApp02.java" afterPath="$PROJECT_DIR$/src/main/java/childcare/StartApp02.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChildMapper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChildMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/ChildMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
@@ -137,6 +60,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bean.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Bean.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,7 +87,7 @@
       <file leaf-file-name="ChildJDBCTemplate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/ChildJDBCTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="-560">
               <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -188,18 +121,8 @@
       <file leaf-file-name="ConnectUrl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/jdbcexample/ConnectUrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartApp02.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/childcare/StartApp02.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="360">
+              <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -235,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/exceptionexamples/StartApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptionexamples/ExceptionMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptionexamples/MyExceptionStartApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptionexamples/InvalidProductException.java" />
@@ -286,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/java/childcare/StartApp03.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/ChildMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/ChildJDBCTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Bean.xml" />
       </list>
     </option>
   </component>
@@ -411,6 +334,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -457,32 +384,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="childcare" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -926,13 +827,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/exceptionexamples/arraydivideexample/Class1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exceptionexamples/arraydivideexample/Class2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -1219,14 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/jdbcexample/ConnectUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/jdbcexample/InsertData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-400">
@@ -1277,16 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/ChildJDBCTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/ChildMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1294,6 +1170,32 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/jdbcexample/ConnectUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/ChildJDBCTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
